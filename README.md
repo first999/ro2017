@@ -1,30 +1,13 @@
-# Računalniško oblikovanje 2017 - Ruby on Rails !!!
-
-Ne pozabit si razjasnit kaj pomeni MVC!
-
-* **Ustvarimo novo rails aplikacijo**
+# Računalniško oblikovanje 2017 - Ruby on Rails
 
 ```
-rails new ro2017
-```
-Ustvarile se vam bodo vse potrebne doatoteke za Rails aplikacijo. Bodite potrpežljivi :)
-
-* **Pomaknete se v novo nastalo aplikacijo in poženete strežnik.**
-
-```
-cd ro2017
-rails s
-```
-ker delamo v c9.io strežnik poženemo z ukazom
-
-```
-rails s -p $PORT -b $IP
+#v Gemfile dodamo polje za podatkovno bazo mysql
+gem 'mysql2'
 ```
 
-* **Ustvarimo novo tabelo za destinacije**
 
 ```
-rails generate scaffold destination name:string description:text picture:string
+rails generate scaffold Article title:string text:text
 ```
 Pazite na uporabo edine oz. množine. Scaffold nam bo ustvari ustrezni model (povezava s tabelo v bazi), view in seveda controler. Polja v so lahko poljubna. Samodejno nam ustvari id in datumska polja (kdaj ste ustvarili in nazadnje posodobili zapis).
 
@@ -32,7 +15,7 @@ V bazi še ni ustvaril tabele, pripravljena je le skripta. Poženemo migracijo, 
 ```
 rake db:migrate
 ```
-Novo ustvarjeno lahko preverite tako, da poženete strežnik in gresta na ...\destinations
+Novo ustvarjeno lahko preverite tako, da poženete strežnik in gresta na .../articles
 
 Če želite urediti "obvezna" polja, dolžine ... Nekaj primerov (ne za konkretni primer):
 ```
