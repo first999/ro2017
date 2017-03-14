@@ -1,4 +1,4 @@
-# Računalniško oblikovanje 2017 - Ruby on Rails
+# Računalniško oblikovanje 2017 - Ruby on Rails !!!
 
 Ne pozabit si razjasnit kaj pomeni MVC!
 
