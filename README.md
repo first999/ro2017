@@ -211,7 +211,7 @@ p.s. Dostop do rails konzole je z ukazom ```rails c```
     ```
  3. Ustvarite migracijsko skripto
     ```
-        rails g migration add_picture_to_users picture:string 
+    rails g migration add_picture_to_users picture:string 
     ```
  4. Posodobite bazo
     ```
