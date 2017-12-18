@@ -205,9 +205,18 @@ p.s. Dostop do rails konzole je z ukazom ```rails c```
 
 
  1. Za dodajanje slike bomo uporabili gem ( gem 'carrierwave'), nato zaženite bundle install
- 2. rails generate uploader Picture ->zgenerirate mapo
- 3. rails g migration add_picture_to_users picture:string 
- 4. zaženite rake db:migrate
+ 2. Ustvarite mapo
+    ```
+    rails generate uploader Picture 
+    ```
+ 3. Ustvarite migracijsko skripto
+    ```
+        rails g migration add_picture_to_users picture:string 
+    ```
+ 4. Posodobite bazo
+    ```
+    rake db:migrate
+    ```
 Dodate:
    ``` class User < ActiveRecord::Base
       mount_uploader :picture, PictureUploader
