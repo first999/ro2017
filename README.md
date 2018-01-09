@@ -1,7 +1,15 @@
 # Računalniško oblikovanje 2017 - Ruby on Rails
+Ustvarimo nov projekt
+```
+rails new Blog
+```
 
+V terminalu se prestavimo na mapo Blog
+```
+cd Blogs
+```
 
-
+Odprite terminal ter vanj vpišite naslednjo komando:
 ```
 rails generate scaffold Article title:string text:text
 ```
