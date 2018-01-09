@@ -1,9 +1,5 @@
 # Računalniško oblikovanje 2017 - Ruby on Rails
 
-```
-#v Gemfile dodamo polje za podatkovno bazo mysql
-gem 'mysql2'
-```
 
 
 ```
