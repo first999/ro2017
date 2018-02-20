@@ -86,7 +86,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Prej smo pozabili še nastaviti, da naj bo naša začetna stran "/destinations". To uredimo tako, da v config/routes.rb poiščemo in odkomentiramo ```#root 'welcome#index'```, ter spremenimo v ```root 'destinations#index'```. 
+Prej smo pozabili še nastaviti, da naj bo naša začetna stran "/destinations". To moramo narediti vedno kadar uporabljamo Devise gem. To uredimo tako, da v config/routes.rb poiščemo in odkomentiramo ```#root 'welcome#index'```, ter spremenimo v ```root 'destinations#index'```. 
 
 Preverite tako, da poženete strežnik in obiščite vašo aplikacijo. Brez prijave ne boste mogli dostopati do nje.
 
