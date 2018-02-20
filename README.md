@@ -65,6 +65,16 @@ Ker nam je ustvaril tudi tabelo user, moramo akcije izvršiti tudi nad bazo.
 rake db:migrate
 ```
 
+V datoteki config/environments/development.rb dodamo naslednjo vrstico
+```
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+```
+
+Na koncu še namestimo views za Devise (kasneje lahko v datoteki views/devise/registrations/new.html.erb spreminjate izgled registracijskega forma, v datoteki views/devise/sessions/new.html.erb pa form prijave).
+```
+rails generate devise:views
+```
+
 Gremo v app/controllers/application_controller.rb in dodamo vrstico ```before_filter :authenticate_user!```, da se autetikacija izvede vedno. Po dodani vrstici bo izgledala datoteka:
 
 ```
